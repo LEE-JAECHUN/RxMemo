@@ -14,6 +14,7 @@
 		DF9C69AC25857C6C0050DE18 /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69AA25857C6C0050DE18 /* RxMemo.xcdatamodeld */; };
 		DF9C69AE25857C6E0050DE18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9C69AD25857C6E0050DE18 /* Assets.xcassets */; };
 		DF9C69B125857C6E0050DE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9C69AF25857C6E0050DE18 /* LaunchScreen.storyboard */; };
+		DF9C69CC25857EBF0050DE18 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69CB25857EBF0050DE18 /* Memo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DF9C69AD25857C6E0050DE18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF9C69B025857C6E0050DE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF9C69B225857C6E0050DE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF9C69CB25857EBF0050DE18 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		DF9C69C825857D590050DE18 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF9C69CB25857EBF0050DE18 /* Memo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				DF9C69A225857C6C0050DE18 /* AppDelegate.swift in Sources */,
 				DF9C69A425857C6C0050DE18 /* SceneDelegate.swift in Sources */,
 				DF9C69AC25857C6C0050DE18 /* RxMemo.xcdatamodeld in Sources */,
+				DF9C69CC25857EBF0050DE18 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
