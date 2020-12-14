@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270DF4772588271C004EF47B /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C6A0025880BC90050DE18 /* SceneCoordinator.swift */; };
 		AC2D435F969B5E38E4FA629D /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78EAEF7482DE81F257C641A /* Pods_RxMemo.framework */; };
 		DF9C69A225857C6C0050DE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69A125857C6C0050DE18 /* AppDelegate.swift */; };
 		DF9C69A425857C6C0050DE18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69A325857C6C0050DE18 /* SceneDelegate.swift */; };
@@ -27,7 +28,6 @@
 		DF9C69F8258807F50050DE18 /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69F7258807F50050DE18 /* TransitionModel.swift */; };
 		DF9C69FB258808810050DE18 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69FA258808810050DE18 /* Scene.swift */; };
 		DF9C69FE25880B4B0050DE18 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69FD25880B4B0050DE18 /* SceneCoordinatorType.swift */; };
-		DF9C6A0125880BC90050DE18 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C6A0025880BC90050DE18 /* SceneCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -303,9 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270DF4772588271C004EF47B /* SceneCoordinator.swift in Sources */,
 				DF9C69D5258581DD0050DE18 /* MemoryStorage.swift in Sources */,
 				DF9C69E8258588B70050DE18 /* MemoComposeViewModel.swift in Sources */,
-				DF9C6A0125880BC90050DE18 /* SceneCoordinator.swift in Sources */,
 				DF9C69FB258808810050DE18 /* Scene.swift in Sources */,
 				DF9C69DC258587C20050DE18 /* MemoDetailViewController.swift in Sources */,
 				DF9C69EB258589080050DE18 /* ViewModelBindableType.swift in Sources */,
