@@ -12,10 +12,10 @@ import RxCocoa
 class SceneCoordinator: SceneCoordinatorType {
     
     private let bag = DisposeBag()
-    private var window:UIWindows
+    private var window:UIWindow
     private var currentVC:UIViewController
     
-    required init(windows: UIWindow) {
+    required init(window: UIWindow) {
         self.window = window
         currentVC = window.rootViewController!
     }
@@ -28,7 +28,7 @@ class SceneCoordinator: SceneCoordinatorType {
         switch style {
         case .root:
             currentVC = target
-            windows.rootViewController = target
+            window.rootViewController = target
             subject.onCompleted()
         case .push:
             guard let nav = currentVC.navigationController else {

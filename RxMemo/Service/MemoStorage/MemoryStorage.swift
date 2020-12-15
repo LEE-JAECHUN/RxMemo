@@ -27,8 +27,8 @@ class MemoryStorage: MemoStorageType {
     }
     
     @discardableResult
-    func MemoList() -> Observable<[Memo]>.Element {
-        return list
+    func memoList() -> Observable<[Memo]> {
+        return store
     }
     
     @discardableResult

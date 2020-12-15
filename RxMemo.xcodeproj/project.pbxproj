@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		270DF4772588271C004EF47B /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C6A0025880BC90050DE18 /* SceneCoordinator.swift */; };
+		27F3EE472589738000627CFD /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3EE462589738000627CFD /* CommonViewModel.swift */; };
 		AC2D435F969B5E38E4FA629D /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78EAEF7482DE81F257C641A /* Pods_RxMemo.framework */; };
 		DF9C69A225857C6C0050DE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69A125857C6C0050DE18 /* AppDelegate.swift */; };
 		DF9C69A425857C6C0050DE18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C69A325857C6C0050DE18 /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27F3EE462589738000627CFD /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		2AC6F2056BE7361B721D0261 /* Pods-RxMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.debug.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6DFA5ACF12C1D34D75D218B5 /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
 		D78EAEF7482DE81F257C641A /* Pods_RxMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				DF9C69E1258588420050DE18 /* MemoListViewModel.swift */,
 				DF9C69E42585886C0050DE18 /* MemoDetailViewModel.swift */,
 				DF9C69E7258588B70050DE18 /* MemoComposeViewModel.swift */,
+				27F3EE462589738000627CFD /* CommonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				DF9C69FE25880B4B0050DE18 /* SceneCoordinatorType.swift in Sources */,
 				DF9C69E2258588420050DE18 /* MemoListViewModel.swift in Sources */,
 				DF9C69E52585886C0050DE18 /* MemoDetailViewModel.swift in Sources */,
+				27F3EE472589738000627CFD /* CommonViewModel.swift in Sources */,
 				DF9C69F8258807F50050DE18 /* TransitionModel.swift in Sources */,
 				DF9C69D9258587610050DE18 /* MemoListViewController.swift in Sources */,
 				DF9C69DF258587FA0050DE18 /* MemoComposeViewController.swift in Sources */,

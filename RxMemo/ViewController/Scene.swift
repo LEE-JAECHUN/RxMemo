@@ -32,7 +32,7 @@ extension Scene {
             }
             detailVC.bind(viewModel: viewModel)
             return detailVC
-        case .compose(viewModel):
+        case .compose(let viewModel):
             guard let nav = storyboard.instantiateViewController(withIdentifier: "ComposeNav") as? UINavigationController else {
                 fatalError()
             }

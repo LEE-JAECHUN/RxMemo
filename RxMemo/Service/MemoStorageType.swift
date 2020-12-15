@@ -13,7 +13,7 @@ protocol MemoStorageType {
     func createMemo(content: String) -> Observable<Memo>
     
     @discardableResult
-    func MemoList() -> Observable<[Memo]>.Element
+    func memoList() -> Observable<[Memo]>
     
     @discardableResult
     func update(memo: Memo, content: String) -> Observable<Memo>
