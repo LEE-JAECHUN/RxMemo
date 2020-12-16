@@ -7,12 +7,15 @@
 
 import UIKit
 
+/// Scene (화면) 열거형
 enum Scene {
     case list(MemoListViewModel)
     case detail(MemoDetailViewModel)
     case compose(MemoComposeViewModel)
 }
 
+/// Scene (화면) 열거형 확장,  객체생성 메소드 추가
+/// 참고: Swift는 열거형/구조체/클래스 모두 메소드 추가 가능
 extension Scene {
     func instantiate(from storyboard: String = "Main") -> UIViewController {
         let storyboard = UIStoryboard(name: storyboard, bundle: nil)

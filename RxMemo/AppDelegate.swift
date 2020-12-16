@@ -17,10 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        /// 메모리 스토리지
         let storage = MemoryStorage()
+        /// Scene (화면) 전환
         let coordinator = SceneCoordinator(window: window!)
+        /// 뷰 모델
         let listViewModel = MemoListViewModel(title: "나의 메모", sceneCoordinator: coordinator, storage: storage)
+        /// Scene (화면) 타입
         let listScene = Scene.list(listViewModel)
+        /// 화면전환
         coordinator.transition(to: listScene, style: .root, animated: false)
         return true
     }

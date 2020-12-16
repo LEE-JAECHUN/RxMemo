@@ -14,6 +14,7 @@ protocol ViewModelBindableType {
     func bindViewModel()
 }
 
+/// UIViewController 및 서브클래스에 bind 메소드 추가 (확장)
 extension ViewModelBindableType where Self: UIViewController {
     mutating func bind(viewModel: Self.ViewModelType) {
         self.viewModel = viewModel

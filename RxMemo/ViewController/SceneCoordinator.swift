@@ -23,11 +23,14 @@ class SceneCoordinator: SceneCoordinatorType {
     @discardableResult
     func transition(to scene: Scene, style: TransitionStyle, animated: Bool) -> Completable {
         let subject = PublishSubject<Void>()
+        
+        /// UIViewController 생성 (Main 스토리보드)
         let target = scene.instantiate()
         
         switch style {
         case .root:
             currentVC = target
+            // 루트 뷰 컨트롤러 할당
             window.rootViewController = target
             subject.onCompleted()
         case .push:
