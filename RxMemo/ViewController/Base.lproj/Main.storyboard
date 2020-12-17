@@ -85,15 +85,39 @@
                     <view key="view" contentMode="scaleToFill" id="DUv-Oz-xnp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MAM-qN-CQj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aZA-xi-tzy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MAM-qN-CQj" secondAttribute="bottom" id="Gs1-fh-0Cj"/>
+                            <constraint firstItem="MAM-qN-CQj" firstAttribute="top" secondItem="DUv-Oz-xnp" secondAttribute="top" id="RI1-ZO-xGr"/>
+                            <constraint firstItem="MAM-qN-CQj" firstAttribute="leading" secondItem="aZA-xi-tzy" secondAttribute="leading" id="Ykx-xg-Ijd"/>
+                            <constraint firstItem="MAM-qN-CQj" firstAttribute="trailing" secondItem="aZA-xi-tzy" secondAttribute="trailing" id="ghm-DZ-99l"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="aZR-bd-A34"/>
+                    <navigationItem key="navigationItem" title="새 메모" id="aZR-bd-A34">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="FPY-JS-Icw"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="tck-ND-JcT"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="FPY-JS-Icw" id="Fl8-Wa-6TR"/>
+                        <outlet property="contentTextView" destination="MAM-qN-CQj" id="CHu-mK-Ehb"/>
+                        <outlet property="saveButton" destination="tck-ND-JcT" id="a4q-VR-Dgp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOa-36-ypC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280" y="66"/>
+            <point key="canvasLocation" x="1279.7101449275362" y="65.625"/>
         </scene>
         <!--메모 보기-->
         <scene sceneID="GAF-Hk-9fi">
@@ -150,6 +174,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
